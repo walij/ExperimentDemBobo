@@ -13,7 +13,7 @@ pipeline{
 		} 
 		stage ('Publish Report') { 
 			steps {
-				publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\Docker\\ReportReport\\ExecutionReport.html', reportFiles: 'ExecutionReport.html', reportName: 'SmokeTestReport', reportTitles: ''])
+				publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\Docker\\ReportReport\\HtmlReport\\', reportFiles: 'ExecutionReport.html', reportName: 'SmokeTestReport', reportTitles: ''])
 			}
 		} 
 	}
