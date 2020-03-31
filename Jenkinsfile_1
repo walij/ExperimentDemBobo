@@ -1,11 +1,11 @@
 pipeline{
 	agent any
 	stages{ 
-		stage ('SCM Check Out'){
-			steps {
-				git url: 'https://github.com/AutomationTEst12345/ExperimentDemBobo.git'
-			}
-		}
+		//stage ('SCM Check Out'){
+		//	steps {
+		//		git url: 'https://github.com/AutomationTEst12345/ExperimentDemBobo.git'
+		//	}
+		//}
 		stage ('Run Smoke Test') { 
 			steps {
 				bat label: '', script: 'java -jar sampleCICDProcess.jar'
