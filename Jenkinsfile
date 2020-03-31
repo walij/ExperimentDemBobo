@@ -3,7 +3,7 @@ pipeline {
   stages { 
           stage ('SCM Check Out') {
                            steps {
-                                   git url: 'https://github.com/walij/msgfw2.0_Demo.git'
+                                   git url: 'https://github.com/AutomationTEst12345/ExperimentDemBobo.git'
                                  }
                           }
           stage ('Test Bed Set Up') { 
