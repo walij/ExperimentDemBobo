@@ -15,8 +15,8 @@ pipeline {
 		} 
 		stage ('MSGFW2.0 Unit Test Execution') { 
 			steps {
-				dir('C:\\DOCKER'){
-					bat label: '', script: 'docker run --rm -v "C:\\Docker\\Test Results":C:\\app\\msg.Testframework_cs\\TestResults msgfw2.0:test'
+				dir('C:\\Docker\\MSGFW2.0'){
+					bat label: '', script: 'docker run --rm -v "C:\\Docker\\MSGFW2.0\\Test Results":C:\\app\\msg.Testframework_cs\\TestResults msgfw2.0:test'
 				}
 			}
 		}
